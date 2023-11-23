@@ -74,7 +74,7 @@ body {
     text-align: center;   
 }
 
-.weather-box img { /*img desplaying weather*/
+.weather-box img { /*img displaying weather*/
     width: 60%;
     margin-top: 30px;
 }
@@ -171,6 +171,12 @@ body {
 
 .fadeIn {  /*We will use this class to apply it to different css classes, with .classList.add*/
     animation: 0.5s fadeIn forwards;
+        /*  It specifies that the animation should take 0.5 seconds (0.5s)
+        to complete and uses the fadeIn keyframes defined later in the CSS.*/
+
+        /* The forwards value ensures that the element retains the
+        styles of the last keyframe after the animation completes.*/
+
     animation-delay: 0.5s;
 }
 
