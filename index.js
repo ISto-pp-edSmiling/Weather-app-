@@ -37,19 +37,20 @@ search.addEventListener("click", () => {
             const description = document.querySelector('.weather-box .description');
             const humidity = document.querySelector('.weather-details .humidity span');
             const wind = document.querySelector('.weather-details  .wind span');
-                // 
+                // without applying it directly to span the entire html class
+                // wind gets replaced by innerhtml on line 75.
         
             switch (json.weather[0].main) {
             // json.weather[0].main represents the main weather condition for the
             // given location. It is an array, and [0] is used to access the first
-            // element of that array, which contains information
+            // element of that array in a json provided by the api, which contains information
             // about the current weather conditions.
             
                 case 'Clear':
                     image.src = 'images/clear.png';
                     break;
 
-                case 'Cloud':
+                case 'Clouds':
                     image.src = 'images/cloud.png';
                     break;
 
